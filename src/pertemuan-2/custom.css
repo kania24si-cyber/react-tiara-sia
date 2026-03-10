@@ -1,0 +1,60 @@
+/* Styling untuk keseluruhan halaman */
+body {
+    font-family: 'Quicksand', 'Arial', sans-serif; /* Font lebih bulat lebih imut */
+    background-color: #1a1a2e; /* Gelap supaya neon lebih terlihat */
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container utama dengan efek Glassmorphism & Neon Border */
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #ff7eb9; /* Warna pink neon lembut */
+    box-shadow: 0 0 15px #ff7eb9, inset 0 0 10px rgba(255, 126, 185, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Header utama dengan efek Glow Text */
+h1 {
+    color: #7efaff; /* Biru neon imut */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #7efaff, 0 0 20px #7efaff;
+}
+
+/* Paragraf */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Garis pemisah Neon */
+hr {
+    border: none;
+    height: 2px;
+    background: #ff7eb9;
+    box-shadow: 0 0 8px #ff7eb9;
+    margin: 20px 0;
+}
+
+/* Greeting */
+small {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    color: #ffccf9; /* Pink sangat muda */
+    text-shadow: 0 0 5px #ff7eb9;
+    margin-top: 15px;
+    font-weight: bold;
+}
