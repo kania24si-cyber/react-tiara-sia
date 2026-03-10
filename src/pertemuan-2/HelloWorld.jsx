@@ -9,7 +9,7 @@ export default function HelloWorld(){
         <div>
             <h1>Hello World</h1>
              <img src="public/img/cat.png" alt="logo react" width={750}/>
-            <p>Selamat belajar ReactJs</p>
+            <p>Selamat Belajar ReactJs</p>
 
             <GreetingBinjai/>
             <QuoteText/>
