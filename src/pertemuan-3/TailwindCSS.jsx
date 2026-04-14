@@ -4,7 +4,6 @@ export default function TailwindCSS(){
             <h1 className="shadow-;g bg-blue-100 p-2 m-4"> Belajar Tailwind CSS 4</h1>
             <button className= "bg-red-700 text-gray-300 px-4 py-2 mx-4 rounded shadow-lg">Click Me</button>
             <Spacing title="Card Title" content="ABCDEFGH"/>
-            <FlexboxGrid/>
             <Typography/>
             <BorderRadius/>
             <BackgroundColors/>
@@ -20,21 +19,6 @@ function Spacing(props){
             <h2 className="text-lg font-semibold">{props.title}</h2>
             <p className="mt-2 text-gray-600">{props.content}</p>
         </div>
-    )
-}
-
-function FlexboxGrid(){
-    return (
-        <nav className="flex justify-between bg-gray-800 p-4 text-white">
-            <h1 className="text-lg font-bold">MyWebsite</h1>
-            <ul className="flex space-x-4">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <h1 className="text-lg font-bold">logout</h1>
-
-        </nav>
     )
 }
 
