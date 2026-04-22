@@ -20,6 +20,7 @@ import {
 import PageHeader from "../components/PageHeader";
 
 export default function Dashboard({ dark }) {
+
   const lineData = [
     { day: "Sun", total: 20 },
     { day: "Mon", total: 45 },
@@ -55,7 +56,14 @@ export default function Dashboard({ dark }) {
 
   return (
     <div className={dark ? "bg-gray-900 min-h-screen" : "bg-gray-100 min-h-screen"}>
-      <PageHeader />
+       <PageHeader
+        title="Dashboard"
+        breadcrumb="Dashboard"
+      >
+        <button className="bg-hijau text-white px-4 py-2 rounded-lg">
+          Add Button
+        </button>
+      </PageHeader>
 
       {/* SUMMARY */}
       <div className="p-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">

@@ -3,6 +3,7 @@ import {
   MdAdd,
   MdShoppingCart,
   MdPeople,
+  MdError,
 } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
@@ -68,8 +69,35 @@ export default function Sidebar({ dark, open }) {
               {open && <span>Customers</span>}
             </NavLink>
           </li>
+
+          
+      {/* ERROR 400 */}
+          <li>
+            <NavLink to="/400" className={menuClass}>
+              <MdError className="text-2xl min-w-[24px]" />
+              {open && <span>Error 400</span>}
+            </NavLink>
+          </li>
+
+          {/* ERROR 401 */}
+          <li>
+            <NavLink to="/401" className={menuClass}>
+              <MdError className="text-2xl min-w-[24px]" />
+              {open && <span>Error 401</span>}
+            </NavLink>
+          </li>
+
+          {/* ERROR 403 */}
+          <li>
+            <NavLink to="/403" className={menuClass}>
+              <MdError className="text-2xl min-w-[24px]" />
+              {open && <span>Error 403</span>}
+            </NavLink>
+          </li>
+
         </ul>
       </div>
+      
 
       {/* FOOTER */}
       <div className="mt-auto">

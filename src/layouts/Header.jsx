@@ -108,7 +108,7 @@ export default function Header({
           </span>
 
           <img
-            src="img\image.png"
+            src="img\james3.jpg"
             className="w-10 h-10 rounded-full"
           />
         </div>

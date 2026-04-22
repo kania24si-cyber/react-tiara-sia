@@ -11,6 +11,10 @@ import NotFound from "./pages/NotFound";
 
 import "./assets/tailwind.css";
 
+import BadRequest from "./pages/BadRequest";
+import Unauthorized from "./pages/Unauthorized";
+import Forbidden from "./pages/Forbidden";
+
 function App() {
   const [dark, setDark] = useState(false);
   const [open, setOpen] = useState(true);
@@ -29,13 +33,17 @@ function App() {
         {/* HEADER */}
         <Header dark={dark} setDark={setDark} open={open} setOpen={setOpen} />
 
-        {/* ROUTES */}
+          {/* ROUTES */}
         <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard dark={dark} />} />
           <Route path="/Orders" element={<Orders dark={dark} />} />
           <Route path="/Customers" element={<Customers dark={dark} />} />
 
+          <Route path="/400" element={<BadRequest />} />
+          <Route path="/401" element={<Unauthorized />} />
+          <Route path="/403" element={<Forbidden />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>

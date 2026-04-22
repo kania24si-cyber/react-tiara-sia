@@ -1,10 +1,10 @@
 import ErrorPage from "../components/ErrorPage";
 
-export default function NotFound() {
+export default function Forbidden() {
   return (
     <ErrorPage
-      code="404"
-      description="You mustn't be here!"
+      code="403"
+      description="Forbidden Page!"
       image="/img/ghost2.png"
     />
   );
