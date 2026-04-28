@@ -11,6 +11,10 @@ import BadRequest from "./pages/BadRequest";
 import Unauthorized from "./pages/Unauthorized";
 import Forbidden from "./pages/Forbidden";
 import MainLayout from "./layouts/MainLayout";
+import AuthLayout from "./layouts/AuthLayout";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
+import Forgot from "./pages/auth/Forgot";
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -30,6 +34,12 @@ function App() {
 
           <Route path="*" element={<NotFound />} />
           </Route>
+
+             <Route element={<AuthLayout/>}>
+            <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/forgot" element={<Forgot/>} />
+        </Route>
         </Routes>
   )
 }
