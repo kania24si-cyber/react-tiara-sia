@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop ASUS Vivobook",
+    "category": "Electronics",
+    "price": 8500000,
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "name": "Mouse Logitech M331",
+    "category": "Electronics",
+    "price": 250000,
+    "stock": 35
+  },
+  {
+    "id": 3,
+    "name": "Keyboard Mechanical Fantech",
+    "category": "Electronics",
+    "price": 450000,
+    "stock": 20
+  },
+  {
+    "id": 4,
+    "name": "Monitor Samsung 24 Inch",
+    "category": "Electronics",
+    "price": 2200000,
+    "stock": 10
+  },
+  {
+    "id": 5,
+    "name": "Headset Rexus",
+    "category": "Accessories",
+    "price": 320000,
+    "stock": 18
+  },
+  {
+    "id": 6,
+    "name": "Flashdisk Sandisk 64GB",
+    "category": "Storage",
+    "price": 120000,
+    "stock": 40
+  },
+  {
+    "id": 7,
+    "name": "SSD Kingston 512GB",
+    "category": "Storage",
+    "price": 780000,
+    "stock": 15
+  },
+  {
+    "id": 8,
+    "name": "Printer Epson L3210",
+    "category": "Office",
+    "price": 2500000,
+    "stock": 8
+  },
+  {
+    "id": 9,
+    "name": "Webcam Logitech C270",
+    "category": "Accessories",
+    "price": 400000,
+    "stock": 17
+  },
+  {
+    "id": 10,
+    "name": "Router TP-Link",
+    "category": "Networking",
+    "price": 350000,
+    "stock": 22
+  },
+  {
+    "id": 11,
+    "name": "Smartphone Samsung A15",
+    "category": "Mobile",
+    "price": 3200000,
+    "stock": 14
+  },
+  {
+    "id": 12,
+    "name": "Power Bank Xiaomi 10000mAh",
+    "category": "Mobile",
+    "price": 280000,
+    "stock": 27
+  },
+  {
+    "id": 13,
+    "name": "Charger Anker 20W",
+    "category": "Accessories",
+    "price": 180000,
+    "stock": 30
+  },
+  {
+    "id": 14,
+    "name": "Kabel USB Type-C",
+    "category": "Accessories",
+    "price": 50000,
+    "stock": 50
+  },
+  {
+    "id": 15,
+    "name": "Tablet Lenovo Tab M10",
+    "category": "Mobile",
+    "price": 2800000,
+    "stock": 9
+  },
+  {
+    "id": 16,
+    "name": "Speaker Bluetooth JBL",
+    "category": "Audio",
+    "price": 650000,
+    "stock": 13
+  },
+  {
+    "id": 17,
+    "name": "Smartwatch Haylou",
+    "category": "Wearable",
+    "price": 450000,
+    "stock": 16
+  },
+  {
+    "id": 18,
+    "name": "Kamera Canon EOS",
+    "category": "Camera",
+    "price": 7200000,
+    "stock": 5
+  },
+  {
+    "id": 19,
+    "name": "Tripod Kamera",
+    "category": "Camera",
+    "price": 150000,
+    "stock": 19
+  },
+  {
+    "id": 20,
+    "name": "Microphone Boya M1",
+    "category": "Audio",
+    "price": 170000,
+    "stock": 24
+  },
+  {
+    "id": 21,
+    "name": "Harddisk External 1TB",
+    "category": "Storage",
+    "price": 950000,
+    "stock": 11
+  },
+  {
+    "id": 22,
+    "name": "Gaming Chair",
+    "category": "Furniture",
+    "price": 1800000,
+    "stock": 7
+  },
+  {
+    "id": 23,
+    "name": "Meja Komputer",
+    "category": "Furniture",
+    "price": 1200000,
+    "stock": 6
+  },
+  {
+    "id": 24,
+    "name": "Lampu LED RGB",
+    "category": "Accessories",
+    "price": 90000,
+    "stock": 28
+  },
+  {
+    "id": 25,
+    "name": "Cooling Pad Laptop",
+    "category": "Accessories",
+    "price": 140000,
+    "stock": 21
+  },
+  {
+    "id": 26,
+    "name": "HDMI Converter",
+    "category": "Electronics",
+    "price": 75000,
+    "stock": 33
+  },
+  {
+    "id": 27,
+    "name": "UPS APC 650VA",
+    "category": "Office",
+    "price": 850000,
+    "stock": 10
+  },
+  {
+    "id": 28,
+    "name": "Scanner Canon",
+    "category": "Office",
+    "price": 1600000,
+    "stock": 4
+  },
+  {
+    "id": 29,
+    "name": "Projector Epson",
+    "category": "Office",
+    "price": 4500000,
+    "stock": 3
+  },
+  {
+    "id": 30,
+    "name": "WiFi Adapter USB",
+    "category": "Networking",
+    "price": 130000,
+    "stock": 26
+  }
+]

@@ -1,16 +1,15 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import customers from "../data/customers.json";
 import PageHeader from "../components/PageHeader";
-import { useState } from "react";
 
-export default function Customers ({ dark }) {
+export default function Customers({ dark }) {
   const [showForm, setShowForm] = useState(false);
   return (
-    <div className={dark ? "bg-gray-900 min-h-screen" : "bg-gray-100 min-h-screen"}
+    <div
+      className={dark ? "bg-gray-900 min-h-screen" : "bg-gray-100 min-h-screen"}
     >
-       <PageHeader
-        title="Customers"
-        breadcrumb={["Dashboard", "Customers"]}
-      >
+      <PageHeader title="Customers" breadcrumb={["Dashboard", "Customers"]}>
         <button
           onClick={() => setShowForm(true)}
           className="bg-hijau text-white px-4 py-2 rounded-lg"
@@ -22,9 +21,7 @@ export default function Customers ({ dark }) {
       {/* FORM */}
       {showForm && (
         <div className="bg-white p-5 rounded-lg shadow m-4">
-          <h2 className="text-xl font-bold mb-4">
-            Add Customer
-          </h2>
+          <h2 className="text-xl font-bold mb-4">Add Customer</h2>
 
           <input
             type="text"
@@ -85,15 +82,26 @@ export default function Customers ({ dark }) {
           </thead>
 
           <tbody>
-            {customers.map((item) => (
+            {customers.map((item, index) => (
               <tr
                 key={item.id}
-                className="border-b text-center"
+                className="border-b text-center hover:bg-gray-100"
               >
                 <td className="p-3">{item.id}</td>
-                <td className="p-3">{item.name}</td>
+
+                <td className="p-3">
+                  <Link
+                    to={`/customers/${index + 1}`}
+                    className="text-emerald-500 hover:text-emerald-700 font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                </td>
+
                 <td className="p-3">{item.email}</td>
+
                 <td className="p-3">{item.phone}</td>
+
                 <td className="p-3">{item.loyalty}</td>
               </tr>
             ))}

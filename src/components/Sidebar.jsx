@@ -70,6 +70,17 @@ export default function Sidebar({ dark, open }) {
             </NavLink>
           </li>
 
+           {/* Producta */}
+          <li>
+            <NavLink
+              to="/Products"
+              className={menuClass}
+            >
+              <MdPeople className="text-2xl min-w-[24px]" />
+              {open && <span>Products</span>}
+            </NavLink>
+          </li>
+
           
       {/* ERROR 400 */}
           <li>
