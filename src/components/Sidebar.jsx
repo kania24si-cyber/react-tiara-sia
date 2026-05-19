@@ -70,7 +70,7 @@ export default function Sidebar({ dark, open }) {
             </NavLink>
           </li>
 
-           {/* Producta */}
+           {/* Product */}
           <li>
             <NavLink
               to="/Products"
@@ -80,6 +80,18 @@ export default function Sidebar({ dark, open }) {
               {open && <span>Products</span>}
             </NavLink>
           </li>
+
+           {/* Components */}
+          <li>
+            <NavLink
+              to="/Components"
+              className={menuClass}
+            >
+              <MdPeople className="text-2xl min-w-[24px]" />
+              {open && <span>Components</span>}
+            </NavLink>
+          </li>
+
 
           
       {/* ERROR 400 */}
