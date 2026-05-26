@@ -34,6 +34,7 @@ function App() {
   const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
   const CustomersDetail = React.lazy(() => import("./pages/CustomersDetail"));
   const Components = React.lazy(() => import("./pages/Components"));
+  const FiturXyz = React.lazy(() => import("./pages/FiturXyz"));
   // const Loading = React.lazy(() => import("./components/Loading"));
 
   return (
@@ -45,7 +46,7 @@ function App() {
           <Route path="/Customers" element={<Customers dark={dark} />} />
           <Route path="/Products" element={<Products dark={dark} />} />
           <Route path="/Components" element={<Components dark={dark} />} />
-
+          <Route path="/FiturXyz" element={<FiturXyz dark={dark} />} />
           <Route path="/Products/:id" element={<ProductDetail dark={dark} />} />
 
           <Route

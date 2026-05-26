@@ -92,6 +92,17 @@ export default function Sidebar({ dark, open }) {
             </NavLink>
           </li>
 
+          {/* fitur xyz */}
+          <li>
+            <NavLink
+              to="/FiturXyz"
+              className={menuClass}
+            >
+              <MdPeople className="text-2xl min-w-[24px]" />
+              {open && <span>Fitur Xyz</span>}
+            </NavLink>
+          </li>
+
 
           
       {/* ERROR 400 */}
