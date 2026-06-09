@@ -8,11 +8,12 @@ import {
 import { NavLink } from "react-router-dom";
 
 export default function Sidebar({ dark, open }) {
-      const menuClass = ({ isActive }) =>
-        `flex cursor-pointer items-center rounded-xl p-4  space-x-2
-        ${isActive ? 
-            "text-hijau bg-green-200 font-extrabold" : 
-            "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
+  const menuClass = ({ isActive }) =>
+    `flex cursor-pointer items-center rounded-xl p-4  space-x-2
+        ${
+          isActive
+            ? "text-hijau bg-green-200 font-extrabold"
+            : "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
         }`;
   return (
     <div
@@ -39,10 +40,7 @@ export default function Sidebar({ dark, open }) {
         <ul className="space-y-3">
           {/* DASHBOARD */}
           <li>
-            <NavLink
-              to="/"
-              className={menuClass}
-            >
+            <NavLink to="/" className={menuClass}>
               <MdDashboard className="text-2xl min-w-[24px]" />
               {open && <span>Dashboard</span>}
             </NavLink>
@@ -50,10 +48,7 @@ export default function Sidebar({ dark, open }) {
 
           {/* ORDERS */}
           <li>
-            <NavLink
-              to="/Orders"
-              className={menuClass}
-            >
+            <NavLink to="/Orders" className={menuClass}>
               <MdShoppingCart className="text-2xl min-w-[24px]" />
               {open && <span>Orders</span>}
             </NavLink>
@@ -61,32 +56,23 @@ export default function Sidebar({ dark, open }) {
 
           {/* CUSTOMERS */}
           <li>
-            <NavLink
-              to="/Customers"
-              className={menuClass}
-            >
+            <NavLink to="/Customers" className={menuClass}>
               <MdPeople className="text-2xl min-w-[24px]" />
               {open && <span>Customers</span>}
             </NavLink>
           </li>
 
-           {/* Product */}
+          {/* Product */}
           <li>
-            <NavLink
-              to="/Products"
-              className={menuClass}
-            >
+            <NavLink to="/Products" className={menuClass}>
               <MdPeople className="text-2xl min-w-[24px]" />
               {open && <span>Products</span>}
             </NavLink>
           </li>
 
-           {/* Components */}
+          {/* Components */}
           <li>
-            <NavLink
-              to="/Components"
-              className={menuClass}
-            >
+            <NavLink to="/Components" className={menuClass}>
               <MdPeople className="text-2xl min-w-[24px]" />
               {open && <span>Components</span>}
             </NavLink>
@@ -94,18 +80,23 @@ export default function Sidebar({ dark, open }) {
 
           {/* fitur xyz */}
           <li>
-            <NavLink
-              to="/FiturXyz"
-              className={menuClass}
-            >
+            <NavLink to="/FiturXyz" className={menuClass}>
               <MdPeople className="text-2xl min-w-[24px]" />
               {open && <span>Fitur Xyz</span>}
             </NavLink>
           </li>
 
+          {/* fitur notes */}
+          <li>
+            <NavLink 
+            to="/notes"
+             className={menuClass}>
+              <MdPeople className="text-2xl min-w-[24px]" />
+              {open && <span>Note</span>}
+            </NavLink>
+          </li>
 
-          
-      {/* ERROR 400 */}
+          {/* ERROR 400 */}
           <li>
             <NavLink to="/400" className={menuClass}>
               <MdError className="text-2xl min-w-[24px]" />
@@ -128,10 +119,8 @@ export default function Sidebar({ dark, open }) {
               {open && <span>Error 403</span>}
             </NavLink>
           </li>
-
         </ul>
       </div>
-      
 
       {/* FOOTER */}
       <div className="mt-auto">

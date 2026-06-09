@@ -13,6 +13,7 @@ import Unauthorized from "./pages/Unauthorized";
 // import MainLayout from "./layouts/MainLayout";
 // import AuthLayout from "./layouts/AuthLayout";
 import Loading from "./components/Loading";
+import Note from "./pages/Note";
 // import Login from "./pages/auth/Login";
 // import Register from "./pages/auth/Register";
 // import Forgot from "./pages/auth/Forgot";
@@ -35,6 +36,7 @@ function App() {
   const CustomersDetail = React.lazy(() => import("./pages/CustomersDetail"));
   const Components = React.lazy(() => import("./pages/Components"));
   const FiturXyz = React.lazy(() => import("./pages/FiturXyz"));
+  const Note = React.lazy(() => import("./pages/Note"));
   // const Loading = React.lazy(() => import("./components/Loading"));
 
   return (
@@ -48,7 +50,7 @@ function App() {
           <Route path="/Components" element={<Components dark={dark} />} />
           <Route path="/FiturXyz" element={<FiturXyz dark={dark} />} />
           <Route path="/Products/:id" element={<ProductDetail dark={dark} />} />
-
+          <Route path="/notes" element={<Note dark={dark} />} />
           <Route
             path="/Customers/:id"
             element={<CustomersDetail dark={dark} />}
